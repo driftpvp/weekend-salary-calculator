@@ -9,7 +9,24 @@
 
 </head>
 <body>
-  
+
+    <h3>Add Employee</h3>
+    
+    <input type="text" id="first-name" value="First Name"/>
+    
+    <input type="text" id="last-name" value="Last Name"/>
+    
+    <input type="text" id="ID-name" value="ID"/>
+    
+    <input type="text" id="title-name" value="Title"/>
+    
+    <input type="text" id="salary-name" value="Annual Salary"/>
+    
+
+    <div>
+    <button onclick="addEmployee(event)">Submit</button>
+    </div>
+    <h3>Employees</h3>
     <table>
         <thead>
             <tr>
@@ -19,7 +36,6 @@
                 <th>Title</th>
                 <th>Annual Salary</th>
             </tr>
-            <button onclick="addEmployee(event)">Submit</button>
         </thead>
         <tbody id="employees">
             <tr>
@@ -28,10 +44,15 @@
                 <td>007</td>
                 <td>Applicatoin Support</td>
                 <td>$1000</td>
+                <td><button class="remove-employee" onclick="removeEmployee(event)">Delete</button></td>
             </tr>
         </tbody>
     </table>
-
+    <br>
+    <br>
+    <h3 id="salary-sum">Total Monthly:</h3>
+    <br>
+    <br>
 
 
     <script src="scripts/client.js"></script>

@@ -1,9 +1,10 @@
 # Project Name
 
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
+Weekend Salary Calculator
 
 ## Description
 
-Your project description goes here. What problem did you solve? How did you solve it?
 
-Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
+For this project I created a table that accepts various inputs. There is also a section that aggregates the sum of salaries and gives a warning if sum exceeds threshold 20k.
+
+

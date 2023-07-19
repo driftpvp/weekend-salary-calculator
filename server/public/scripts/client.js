@@ -31,7 +31,7 @@ function addEmployee(event){
                 <td><button class="remove-employee" onclick="removeEmployee(event)">Delete</button></td>
             </tr>`;
             employees.push(employ)
-            totalMonthlyCost += salaryName / 12;
+            totalMonthlyCost += Math.round(salaryName / 12 *100) / 100;
             updateCost();
             console.log(totalMonthlyCost);
 }
@@ -43,6 +43,10 @@ function updateCost(){
         annualSalaryUpdate.classList.add('overBudget');
     }
 }
+
+// function rounding(updateCost){
+//     return Math.round(updateCost * 100) / 100;
+// }
 
 
 function removeEmployee(event){

@@ -11,17 +11,17 @@
 <body>
 
     <h3>Add Employee</h3>
+    <div id="bio">
+    <input type="text" id="first-name" placeholder="First Name"/>
     
-    <input type="text" id="first-name" value="First Name"/>
+    <input type="text" id="last-name" placeholder="Last Name"/>
     
-    <input type="text" id="last-name" value="Last Name"/>
+    <input type="text" id="ID-name" placeholder="ID"/>
     
-    <input type="text" id="ID-name" value="ID"/>
+    <input type="text" id="title-name" placeholder="Title"/>
     
-    <input type="text" id="title-name" value="Title"/>
-    
-    <input type="text" id="salary-name" value="Annual Salary"/>
-    
+    <input type="text" id="salary-name" placeholder="Annual Salary"/>
+    </div>
 
     <div>
     <button onclick="addEmployee(event)">Submit</button>
@@ -50,7 +50,9 @@
     </table>
     <br>
     <br>
+    <div>
     <h3 id="salary-sum">Total Monthly:</h3>
+    </div>
     <br>
     <br>
 
